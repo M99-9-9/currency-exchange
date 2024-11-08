@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحويل العملات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حاسبة تحويل العملات</h1>
+        <p class="description">أدخل المبلغ وحدد العملات للتحويل. يتم تحديث أسعار الصرف يومياً.</p>
+        <div class="input-group">
+            <label for="amount">المبلغ:</label>
+            <input type="number" id="amount" placeholder="أدخل المبلغ">
+        </div>
+        <div class="input-group">
+            <label for="fromCurrency">من:</label>
+            <select id="fromCurrency">
+                <option value="USD">الدولار الأمريكي</option>
+                <option value="EUR">اليورو</option>
+                <option value="SAR">الريال السعودي</option>
+                <option value="GBP">الجنيه البريطاني</option>
+                <option value="JPY">الين الياباني</option>
+                <option value="CAD">الدولار الكندي</option>
+                <option value="YER">الريال اليمني</option> <!-- إضافة الريال اليمني -->
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="toCurrency">إلى:</label>
+            <select id="toCurrency">
+                <option value="USD">الدولار الأمريكي</option>
+                <option value="EUR">اليورو</option>
+                <option value="SAR">الريال السعودي</option>
+                <option value="GBP">الجنيه البريطاني</option>
+                <option value="JPY">الين الياباني</option>
+                <option value="CAD">الدولار الكندي</option>
+                <option value="YER">الريال اليمني</option> <!-- إضافة الريال اليمني -->
+            </select>
+        </div>
+        <button onclick="convert()">تحويل</button>
+        <h2 id="result">النتيجة: </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
